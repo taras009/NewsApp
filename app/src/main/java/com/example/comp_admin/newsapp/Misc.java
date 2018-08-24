@@ -131,17 +131,18 @@ public final class Misc {
                 String date = newsJSONObject.getString("webPublicationDate");
                 String authorName = "no author found";
                 JSONArray tagsJSONArray = newsJSONObject.getJSONArray("tags");
-
-                JSONObject contributorsJSONObject = tagsJSONArray.getJSONObject(0);
-                if (!contributorsJSONObject.getString("webTitle").equals("")) {
-                    authorName = contributorsJSONObject.getString("webTitle");
+                if (tagsJSONArray.length() != 0) {
+                    JSONObject contributorsJSONObject = tagsJSONArray.getJSONObject(0);
+                    if (!contributorsJSONObject.getString("webTitle").equals("")) {
+                        authorName = contributorsJSONObject.getString("webTitle");
+                    }
                 }
 
                 News singleNews = new News(title, section, url, date, authorName);
                 news.add(singleNews);
             }
         } catch (JSONException e) {
-            Log.e("QueryUtils", "Problem parsing the news JSON results", e);
+            Log.e("Misc", "Problem parsing the news JSON results", e);
         }
 
         return news;

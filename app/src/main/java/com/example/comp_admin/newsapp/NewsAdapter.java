@@ -34,7 +34,8 @@ public class NewsAdapter extends ArrayAdapter<News> {
 
         //setting authors
         TextView authorTextViw = (TextView) listItemView.findViewById(R.id.author);
-        authorTextViw.setText(currentNews.getAuthorName());
+        String writtenByAuthor = getContext().getString(R.string.written_by)+ " " + currentNews.getAuthorName();
+        authorTextViw.setText(writtenByAuthor);
 
         // editing date
         String originDate = currentNews.getDate();

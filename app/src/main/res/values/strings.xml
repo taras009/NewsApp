@@ -2,4 +2,47 @@
     <string name="app_name">NewsApp</string>
     <string name="no_internet_connection">No internet connection</string>
     <string name="no_news_found">No news found</string>
+    <string name="written_by">Written by</string>
+
+    <!--  ********* New strings for preferences and settings ********-->
+
+    <!-- settings labels for Android manifests and button-->
+    <string name="settings_title">Setting Activity</string>
+    <string name="settings_menu_item">Settings</string>
+
+    <!-- settings labels and values for preferences fragment-->
+    <string name="settings_page_size_label">Number of pages</string>
+    <string name="settings_page_size_key" translatable="false">page-size</string>
+    <string name="settings_page_size_default" translatable="false">10</string>
+
+    <!-- Strings For Section Preference [CHAR LIMIT=30] -->
+    <string name="settings_section_label">Section</string>
+    <string name="settings_section_key" translatable="false">section</string>
+    <string name="settings_section_default" translatable="false">@string/settings_section_all_news_value</string>
+
+    <!-- Label for section ALL NEWS option [CHAR LIMIT=20] -->
+    <string name="settings_section_all_news_label">All News</string>
+    <string name="settings_section_all_news_value" translatable="false">default</string>
+
+    <!-- Label for section world option [CHAR LIMIT=20] -->
+    <string name="settings_section_world_label">World News</string>
+    <string name="settings_section_world_value" translatable="false">world</string>
+
+    <!-- Label for section us-news option [CHAR LIMIT=20] -->
+    <string name="settings_section_us_news_label">US News</string>
+    <string name="settings_section_us_news_value" translatable="false">us-news</string>
+
+    <!-- Label for section uk-news option [CHAR LIMIT=20] -->
+    <string name="settings_section_uk_news_label">UK News</string>
+    <string name="settings_section_uk_news_value" translatable="false">uk-news</string>
+
+    <!-- Label for section education option [CHAR LIMIT=20] -->
+    <string name="settings_section_education_label">Education</string>
+    <string name="settings_section_education_value" translatable="false">education</string>
+
+    <!-- Label for section science option [CHAR LIMIT=20] -->
+    <string name="settings_section_science_label">Science</string>
+    <string name="settings_section_science_value" translatable="false">science</string>
+
+
 </resources>
